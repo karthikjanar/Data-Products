@@ -1,0 +1,28 @@
+---
+title: "Plotly Demo"
+author: "Karthikeyan Janardanan"
+date: "May 17, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+```
+
+## Plotly Demo
+- iris data was used to show 3d Plot
+
+
+### How to use
+- Rotate the plot to see clear seggregation of 3 species.
+
+## 3D Scatterplot showing the Species
+- use Sepal and Petal Length in x and y axis and color the species. 
+```{r}
+plot_ly(data=iris,x=iris$Sepal.Length, y=iris$Petal.Length, z=iris$Species, mode="markers", type="scatter3d", color = iris$Species)
+```
+
+
+
+
